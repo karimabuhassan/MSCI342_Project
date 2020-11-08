@@ -82,18 +82,56 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <html>
 <head>
 	   <title>Fitness Center</title>
-	   <link rel="stylesheet" type="text/css" href="main.css">
+	   <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
    
-    <div>
+    <div class="background_video">
+
 		<h1>My Fitness Center Pal</h1>
-            <video autoplay muted loop id="background_video">
-            <source src="background_video.mp4" type="video/mp4">
-            </video>
+            <video autoplay muted loop class="background__video"><source src="background_video.mp4" type="video/mp4"></video>
+	</div>
+
+
+    <div class="container" id="container">
+		<div class="form-container sign-up-container">
+
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Log in</h1>
+			<input type="username" placeholder="USERNAME" />
+			<input type="password" placeholder="PIN" />
+			<button><a href="Welcome.html" role="button">Login</a></button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello!</h1>
+				<p>Enter your username & PIN number to start your fitness journey!</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		
-		
-		<p><b>Please Log-In using your Name & PIN Below:</b></p>
+		<!--<p><b>Please Log-In using your Name & PIN Below:</b></p>
         <form action='#' method="POST" >
 		  <div class="form_input">
     			<label for="username"><b>Username</b></label>
@@ -110,7 +148,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
     		<label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
-        </form>	
+        </form>	-->
     </div>
 </body>
 </html>
