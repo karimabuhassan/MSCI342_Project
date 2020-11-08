@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payement Page</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<h1>Payement Details</h1>
+	<!-- USER FORM FOR PAYEMENT INFORMATION, CARD #, NAME, EXP. DATE, CVV # FOR USER TO RENEW THEIR SUBSCRIPTION EITHER MONTHLY OR YEARLY-->
+	<br>
+	<div class="login-box">
+		<form action="#" method="POST">
+			<!--SUBSCRIPTION TYPE // MONTHLY OR YEARLY // -->
+			<label>Subscription Type</label>
+  			<select name='class' id='subscription_type'>
+   				<option value='full body'>Monthly</a>
+   				<option value='chest'>Yearly</a>
+  			</select>
+  			<!--FIELD FOR USER NAME ON CARD-->
+			<div class="user-box">
+			<input type="text" id="card_number_name" placeholder="Name" name="card_number_name">
+			</div>
+
+			<!-- FIELD FOR CARD NUMBER-->
+			<div class="user-box">
+			<input type="text" id="card_number" placeholder="Card Number" name="card_number">
+			</div>
+
+			<!--FIELD FOR EXPIARY DATE-->
+			<div class="user-box">
+			<input type="text" id="expiration_date" placeholder="MM/YY" name="expiration_date">
+			</div>
+		
+			
+		
+			<!--FIELD FOR CVV NUMBER ON BACK OF CARD-->
+			<div class="user-box">
+			<input type="text" id="cvv" placeholder="CVV" name="cvv">
+			</div>
+			<!-- PAY BUTTON TO COMPLETE PAYEMENT-->
+			<br> <a href="#"  class="btn btn1"> Pay </a> </button>
+			<!--BACK BUTTON GOES BACK TO HOME PAGE-->
+			<br><a href="Welcome.html" class="btn btn1"> Back </a> </button>
+	
+		</form>
+	</div>
+
+</body>
+</html>
