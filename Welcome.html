@@ -1,27 +1,119 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-	<title>WELCOME PAGE</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="homestyle.css">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+    <title>Home Page</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
-	<body>
-		<!--This is the main welcome page that users will face when logging in, they will be re-directed to the corresponding page of their choice by pressing the options available-->
-		<h1>Welcome To Your Page!</h1>
-		<br>
-		<!--buttons for the four options displayed on the home screen-->
-		<!--This button leads to the register for a class page-->
-			<button class="button2"> <a href="register_class_page.php">Register Class</a> </button>
-		<!--This button leads to the calendar page, need to add the href when done with calendar page-->
-			<button class="button2"> <a href="#".html">Check Calender</a> </button>
-		</br>
-		<br>
-		<!--This button leads to the add & track prgree page-->
-			<button class="button2"> <a href="progress_page.html">Track Progress</a> </button>
-		<!--Profile button, need to add href when done with profile page-->
-			<button class="button2"> <a href=#>Profile</a> </button>
-		</br>
+ 
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>Fitness Pal</h1>
+            <nav>
+                <ul>
+                    <li><a  href="register_class_page.php" class="btn btn1" >Register Class</a> </li>
+                    <li><a  href="calendar.html" class="btn btn1">Check Calender</a> </li>
+                    <li><a  href="add_progress.html" class="btn btn1">Track Progress</a> </li>
+                    <li><a  href="user_profile.html" class="btn btn1">Profile</a> </li>
+                    <!-- <li><a  href="payement.html" class="btn btn1">Renew Subscription</a> </li>
+                    <li><a  href="videoSelection.html" class="btn btn1">Workout From Home</a> </li>  -->
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-	
+    
+    <div id="home-image">
+        <div class="wrapper">
+            <h2><strong> Your go to fitness club</strong></h2>
+        </div>
+    </div>
+    
+    <div id="features">
+        <div class="wrapper">
+            <ul>
+                <li class="feature-1">
+                    <h4>Register for Classes</h4>
+                    <p>Register for you classes online from: Spin class, yoga, cardio, etc.</p>
+                </li>
+                <li class="feature-2">
+                    <h4>Track Your Progress </h4>
+                    <p>Keep track of all the workouts you played and never miss staying fit</p>
+                </li>
+                <li class="feature-3">
+                    <h4>Work from you comfort zone</h4>
+                    <p>Don't let anything stop you work from your own home with our own video collection to help you workout from your home</p>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="primary-content">
+        <div class="wrapper">
+            <article>
+                <h3>What are the health benefits of exercise?</h3>
+                <p>Help you control your weight. Along with diet, exercise plays an important role in controlling your weight and preventing obesity. To maintain your weight, the calories you eat and drink must equal the energy you burn. To lose weight, you must use more calories than you eat and drink.
 
-	</body>
+                Reduce your risk of heart diseases. Exercise strengthens your heart and improves your circulation. The increased blood flow raises the oxygen levels in your body. This helps lower your risk of heart diseases such as high cholesterol, coronary artery disease, and heart attack. Regular exercise can also lower your blood pressure and triglyceride levels.
+
+                Help your body manage blood sugar and insulin levels. Exercise can lower your blood sugar level and help your insulin work better. This can cut down your risk for metabolic syndrome and type 2 diabetes. And if you already have one of those diseases, exercise can help you to manage it.</p>
+            </article>
+        </div>
+    </div>
+
+    <div id="secondary-content">
+        <div class="wrapper">
+            <article style="background-image: url('home_workout_image.jpeg');">
+                <div class="overlay">
+                    <h4>Workout From Home</h4>
+                    <p><small>The workouts you want from your own home</small></p>
+                    <a href="videoSelection.html" class="more-link">View more</a>
+                </div>
+            </article>
+            <article style="background-image: url('home_fitness_prod.png');">
+                <div class="overlay">
+                    <h4>Shop Fitness Products</h4>
+                    <p><small>Purchase the fitness equipment you need</small></p>
+                    <a href="cart.php" class="more-link">View more</a>
+                </div>
+            </article><div class="clear"></div>
+            <article style="background-image: url('payment_image.jpg');">
+                <div class="overlay">
+                    <h4>Renew Subscription</h4>
+                    <p><small>Renew your subscription online with your credit card</small></p>
+                    <a href="payement.html" class="more-link">View more</a>
+                </div>
+            </article><div class="clear"></div>
+        </div>
+    </div>
+
+
+    
+    <footer>
+        <div class="wrapper">
+            <div id="footer-info">
+                <p>Copyright 2020 Fitness Pal. All rights reserved.</p>
+                <p><a href="#">Terms of Service</a> I <a href="#">Privacy</a></p>
+            </div>
+            <div id="footer-links">
+                <ul>
+                    <li><h5>Company</h5></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Meet The Team</a></li>
+                    <li><a href="#">What We Do</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+    
+</body>
 </html>
