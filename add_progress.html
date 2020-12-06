@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="main2.css">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+    <title>Add Progress</title>
+</head>
+<body>
+	<header>
+        <div class="wrapper">
+            <h1><a href="Welcome.html"> Fitness Pal </a></h1>
+            <nav>
+                <ul>
+                    <li><a  href="register_class_page.php" class="btn btn1" >Register Class</a> </li>
+                    <li><a  href="calendar.html" class="btn btn1">Check Calender</a> </li>
+                    <li><a  href="add_progress.html" class="btn btn1">Track Progress</a> </li>
+                    <li><a  href="user_profile.html" class="btn btn1">Profile</a> </li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+	<!--THIS IS THE ADD PROGRESS PAGE, USERS ENTER THE WORKOUT TYPE THEY PLAYED AND DATE, THEY CAN ALSO PRESS ON THE TRACK PROGRESS BUTTON WHICH REDIRECTS THEM TO CHECK OUT THEIR WORKOUTS-->
+
+	
+	<div class="login-box">
+		<form action="insertWorkout.php" method="POST">
+			<p>Add & Track Progress</p>
+			<div class="user-box">
+				<!--FIELD FOR USER ID NUMBER-->
+			<label for ='membership_ID'><b>Your ID Number</b></label>
+			<br>
+			<input type="text" id="membership_ID" placeholder="ID" name="membership_ID">
+			</div>
+			<!--SELECT WORKOUT TYPE FROM DROPDOWN MENU-->
+			<label for='workout type'> <b>Workout Muscle</b> </label>
+  			<select name='class' id='workout_type'>
+   				<option value='full body'>Full Body</a>
+   				<option value='chest'>Chest</a>
+    			<option value='abs'>Abs</a>
+    			<option value ='shoulders'>Shoulders</a>
+    			<option value='legs'>Legs</a>
+    			<option value ='biceps'>Biceps</a>
+    			<option value='back'>Back</a>
+  			</select>
+		
+			<br></br>
+		
+			<!--DATE FIELD-->
+			<label for='Date'> <b>Date</b> </label>
+			<input type="date" id="date" name="class start"
+       		value="2020-11-01"
+       		min="2020-11-01" max="2020-12-31">
+       		<!--BUTTON TO ADD WORKOUT-->
+			<br> <a href="insertWorkout.php"  class="btn btn1"> Add </a> </button>
+			<!--BUTTON TO TRACK PROGRESS ON THE NEXT PAGE-->
+			<br> <a href="graph1.html"  class="btn btn1"> Track Progress </a> </button>
+			<!--BUTTON TO GO BACK TO PREVIOUS PAGE-->
+			<br><a href="Welcome.html" class="btn btn1"> Back </a> </button>
+	
+		</form>
+	</div>
+
+</body>
+</html>

@@ -2,7 +2,7 @@
 /*Global*/
 body {
     background-color: #fff;
-    color: #777;
+    color: #fff;
     font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 p {
@@ -12,7 +12,7 @@ p {
 h1 {
     font-family: 'Crete Round', serif;
     font-weight: bold;
-    color: #444;
+    color: #fff;
     font-size: 45px;
     margin-bottom: 20px;
 }
@@ -41,13 +41,16 @@ h4 {
 }
 h5 {
     font-size: 15px;
-    color: #444;
+    color: #FFFFFF;
     font-weight: bold;
     text-transform: uppercase;
 }
 a {
     text-decoration: none;
-    color: #444;
+    color: #4b4b4b;
+    display: block;
+    padding: 5px;
+
 }
 a:hover {
     color: #02b8dd;
@@ -57,7 +60,7 @@ strong {
 }
 small {
     font-size: 13px;
-    color: #777;
+    color: #FFFFFF;
     font-style: italic;
 }
 .clear {
@@ -129,52 +132,18 @@ iframe {
 	width: 1400px;
 }
 
+form{
+  display: inline-block;
+}
+
 
 .dropdown{
 	height: 1500px;
 	width: 1400px;
-  	display: inline-block;
+  display: inline-block;
 }
 
-.middle{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-.btn{
-  position: relative;
-  display: block;
-  color: white;
-  font-size: 14px;
-  font-family: "montserrat";
-  text-decoration: none;
-  margin: 30px 0;
-  border: 2px solid #008B8B;
-  padding: 14px 60px;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: 1s all ease;
-}
-.btn::before{
-  background: #008B8B;
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: -1;
-  transition: all 0.6s ease;
-}
 
-.btn1::before{
-  width: 0%;
-  height: 100%;
-}
-
-.btn1:hover::before{
-  width: 100%;
-}
 
 
 .login-box {
@@ -182,7 +151,7 @@ iframe {
   top: 50%;
   left: 50%;
   width: 400px;
-  padding: 40px;
+  padding: 20px;
   transform: translate(-50%, -50%);
   background: rgba(0,0,0,.5);
   box-sizing: border-box;
@@ -233,9 +202,9 @@ iframe {
 
 .login-box form a {
   position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  color: #03e9f4;
+  display: block;
+  padding: 10px 100px;
+  color: #fff;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -333,5 +302,12 @@ iframe {
   50%,100% {
     bottom: 100%;
   }
+}
+
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 

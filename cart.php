@@ -60,8 +60,24 @@ if(isset($_GET["action"]))
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 	</head>
 	<body>
+		<header>
+        	<div class="wrapper">
+            	<h1><a href="Welcome.html"> Fitness Pal </a></h1>
+            	<nav>
+                	<ul>
+                    	<li><a  href="register_class_page.php" class="btn btn1" >Register Class</a> </li>
+                    	<li><a  href="calendar.html" class="btn btn1">Check Calender</a> </li>
+                    	<li><a  href="add_progress.html" class="btn btn1">Track Progress</a> </li>
+                    	<li><a  href="user_profile.html" class="btn btn1">Profile</a> </li>
+                    
+                	</ul>
+            	</nav>
+        	</div>
+    	</header>
+
 		<h1>Add Gym Products To Shopping Cart </h1>
 
 		<br />
