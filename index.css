@@ -5,7 +5,7 @@
 }
 
 body {
-	background: #008B8B;
+	background: #d0dcdc;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -45,8 +45,8 @@ a {
 
 button {
 	border-radius: 20px;
-	border: 1px solid #008B8B;
-	background-color: #008B8B;
+	border: 1px solid #04bf87;
+	background-color: #04bf87;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;

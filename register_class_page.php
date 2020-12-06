@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CLASS REGISTER</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="main2.css">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+    <title>Register Class</title>
 </head>
 <body>
-	<h1>REGISTER YOUR CLASS</h1>
+	<header>
+        <div class="wrapper">
+            <h1><a href="Welcome.html"> Fitness Pal </a></h1>
+            <nav>
+                <ul>
+                    <li><a  href="register_class_page.php" class="btn btn1" >Register Class</a> </li>
+                    <li><a  href="calendar.html" class="btn btn1">Check Calender</a> </li>
+                    <li><a  href="add_progress.html" class="btn btn1">Track Progress</a> </li>
+                    <li><a  href="user_profile.html" class="btn btn1">Profile</a> </li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
 	<!-- THIS IS THE REGISTRATION PAGE, USERS ENTER THEIR NAME, CLASS, TYPE AND DATE AND TIME TO REGISTER FOR A CLASS-->
 	<div class="login-box">
-
 		<form action="insert_class.php" method="POST">
+      <p>Register Class</p>
 			<div class="user-box">
 			<label for ='member_name'><b>Your Name</b></label>
 			<br>
@@ -17,8 +34,8 @@
 			</div>
 			<br></br>
 			
-			<label for='class_type'> <b>Class Name</b> </label>
-  			<select name='class_type'>
+			<label for='class_type'> Class Name </label>
+  			<select>
    				<option value='spin class'>Spin Class</a>
    				<option value='yoga'>Yoga</a>
     			<option value='pilates'>Pilates</a>
