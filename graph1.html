@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<html>
+<head>
+  <title>Progress History</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <header>
+        <div class="wrapper">
+            <h1><a href="Welcome.html"> Fitness Pal </a></h1>
+            <nav>
+                <ul>
+                    <li><a  href="register_class_page.php" class="btn btn1" >Register Class</a> </li>
+                    <li><a  href="calendar.html" class="btn btn1">Check Calender</a> </li>
+                    <li><a  href="add_progress.html" class="btn btn1">Track Progress</a> </li>
+                    <li><a  href="user_profile.html" class="btn btn1">Profile</a> </li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<h1>My Workout Progress</h1>
+
+<div id="piechart"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Workout Tyoe', 'Number of Workouts'],
+  ['Full Body', 8],
+  ['Chest', 2],
+  ['Legs', 4],
+  ['Abs', 1],
+  ['Back', 1]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = { 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+
+</body>
+</html>
+
